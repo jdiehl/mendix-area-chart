@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.areachart.AreaChart" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Area Chart</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Data source">
+                <property key="data" type="datasource" isList="true" required="true">
+	                <caption>Data source</caption>
+	                <description />
+                </property>
+                <property key="xAttr" type="expression" dataSource="data" required="true">
+                    <caption>X value</caption>
+                    <description />
+                    <returnType type="Decimal" />
+                </property>
+                <property key="yAttr" type="expression" dataSource="data" required="true">
+                    <caption>Y value</caption>
+                    <description />
+                    <returnType type="Decimal" />
+                </property>
+                <property key="unit" type="string" required="false">
+                    <caption>Unit</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Appearance">
+                <property key="height" type="integer" defaultValue="300">
+                    <caption>Height</caption>
+                    <description />
+                </property>
+                <property key="lineColor" type="string" defaultValue="#42899E">
+                    <caption>Line Color</caption>
+                    <description />
+                </property>
+                <property key="lineWidth" type="decimal" defaultValue="3.0">
+                    <caption>Line Color</caption>
+                    <description />
+                </property>
+                <property key="areaColor" type="string" defaultValue="#C5DEE3">
+                    <caption>Area Color</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>
