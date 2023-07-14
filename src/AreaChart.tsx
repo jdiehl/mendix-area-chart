@@ -36,7 +36,7 @@ export function AreaChart({
 
     return (
         <VictoryChart height={height} padding={padding}>
-            <VictoryAxis />
+            <VictoryAxis style={{ grid: { stroke: "grey" } }} />
             <VictoryAxis dependentAxis tickFormat={t => `${Math.round(t * 10) / 10}${unit ?? ""}`} />
             <VictoryArea
                 style={{
